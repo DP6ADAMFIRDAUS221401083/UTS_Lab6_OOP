@@ -18,7 +18,7 @@ public class main{
         coffee.setName("Espresso");
         coffee.setPrice(3.0);
 
-        // Memanggil method toString untuk menampilkan informasi minuman
+        // Memanggil method toString untuk menampilkan informasi minuman yang telah di override dari coffee menjadi espresso
         System.out.println(coffee);
     }
 }
