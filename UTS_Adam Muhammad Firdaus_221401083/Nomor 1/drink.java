@@ -1,7 +1,7 @@
 // Membuat sebuah class Drink yang berisi atribut nama dan harga
 public class drink{
-    private String name;
-    private double price;
+    public String name;
+    public double price;
 
     // Constructor untuk membuat objek Drink dengan nama dan harga tertentu
     public drink(String name, double price) {
@@ -18,14 +18,9 @@ public class drink{
     public void serve(int quantity) {
         System.out.println("Serving " + quantity + " " + name + "(s)");
     }
-
-    // Method Overriding: Menerapkan ulang method dari superclass (Object)
-    // untuk mengubah perilaku sesuai kebutuhan subclass (Drink)
-    @Override
-    public String toString() {
-        return "Drink [name=" + name + ", price=" + price + "]";
+    public String getDescription() {
+        return "This is a generic drink.";
     }
-
     // Method setter dan getter untuk mengatur dan mengambil nilai variabel
     public String getName() {
         return name;
